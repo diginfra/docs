@@ -1,0 +1,107 @@
+import React from 'react';
+
+function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer>
+      <div className="container">
+        <div className="sections">
+          <div className="section">
+            <h1>Documentation</h1>
+            <ul>
+              <li>
+                <a href="/docs/">Getting started</a>
+              </li>
+              <li>
+                <a href="/docs/integrations/cicd/">CI/CD integrations</a>
+              </li>
+              <li>
+                <a href="/docs/supported_resources/">Supported resources</a>
+              </li>
+              <li>
+                <a href="/docs/support/">Support</a>
+              </li>
+              <li>
+                <a href="/docs/faq/">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <div className="section">
+            <h1>Community</h1>
+            <ul>
+              <li>
+                <a href="/community-chat/" target="_blank" rel="noreferrer">
+                  Join Slack
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://community-chat.diginfra.khulnasoft.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Search Slack
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/diginfra/diginfra" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/diginfra/diginfra/#community-and-contributing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Contribute
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/diginfra" target="_blank" rel="noreferrer">
+                  Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="section company">
+            <h1>Company</h1>
+            <ul>
+              <li>
+                <a href="/about/">About</a>
+              </li>
+              <li>
+                <a href="/blog/">Blog</a>
+              </li>
+              <li>
+                <a href="/security/">Security</a>
+              </li>
+              <li></li>
+              <li>
+                <a href="/contact/">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="company-info level">
+          <div className="left">
+            <span className="copyright">Copyright © {currentYear} Diginfra Inc.</span>
+          </div>
+          <div className="right">
+            <ul>
+              <li>
+                <a href="/docs/privacy-policy/">Privacy policy</a>
+              </li>
+              <li>
+                <a href="/docs/terms-of-service/">Terms of service</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
